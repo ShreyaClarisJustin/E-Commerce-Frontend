@@ -238,12 +238,7 @@ return
 
 }
 
-console.log({
-    name,
-    email,
-    password,
-    campus
-  })
+console.log("FORM DATA:", name, email, password, campus)
 
 try{
 
@@ -370,10 +365,10 @@ onChange={(e)=>setCampus(e.target.value)}
 >
 
 <option value="">Select Campus</option>
-<option>North Campus</option>
-<option>South Campus</option>
-<option>East Campus</option>
-<option>West Campus</option>
+<option value="North Campus">North Campus</option>
+<option value="South Campus">South Campus</option>
+<option value="East Campus">East Campus</option>
+<option value="West Campus">West Campus</option>
 
 </select>
 
