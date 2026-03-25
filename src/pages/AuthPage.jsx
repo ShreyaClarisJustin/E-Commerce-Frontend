@@ -184,6 +184,7 @@ import { useNavigate } from "react-router-dom"
 import loginreg from "../assets/loginreg.png"
 
 function AuthPage(){
+  console.log("NEW CODE RUNNING")   
 
 const navigate = useNavigate()
 
