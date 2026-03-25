@@ -202,7 +202,7 @@ const handleLogin = async () => {
   try{
 
     const res = await axios.post(
-      "http://localhost:5000/api/users/login",
+      "https://backend-i1xf.onrender.com/api/users/login",
       {
         email,
         password
@@ -244,8 +244,7 @@ const res = await axios.post(
 {
 name,
 email,
-password,
-campus
+password
 }
 )
 
@@ -255,11 +254,8 @@ setIsLogin(true)
 
 }
 catch(error){
-
-console.error(error)
-
-alert("Registration failed")
-
+  console.log(error.response?.data)
+  alert(error.response?.data?.message || "Registration failed")
 }
 
 }
