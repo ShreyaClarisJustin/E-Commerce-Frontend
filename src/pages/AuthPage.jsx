@@ -240,7 +240,7 @@ return
 try{
 
 const res = await axios.post(
-"http://localhost:5000/api/users/signup",
+"https://backend-i1xf.onrender.com/api/users/signup",
 {
 name,
 email,
