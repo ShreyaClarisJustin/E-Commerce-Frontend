@@ -238,6 +238,13 @@ return
 
 }
 
+console.log({
+    name,
+    email,
+    password,
+    campus
+  })
+
 try{
 
 const res = await axios.post(
@@ -365,7 +372,8 @@ onChange={(e)=>setCampus(e.target.value)}
 <option value="">Select Campus</option>
 <option>North Campus</option>
 <option>South Campus</option>
-<option>Main Campus</option>
+<option>East Campus</option>
+<option>West Campus</option>
 
 </select>
 
