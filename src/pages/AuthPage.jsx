@@ -247,7 +247,8 @@ const res = await axios.post(
 {
 name,
 email,
-password
+password,
+campus
 }
 )
 
